@@ -48,10 +48,6 @@
   </head>
   <body class="bg-light p-4">
     <div class="container">
-      <h4>Companies sourced from <a href="https://www.whitehouse.gov/investments/">https://www.whitehouse.gov/investments/</a></h4>
-      <h4>Code and data at <a href="https://github.com/birdhalfbaked/us-investment-tracker">https://github.com/birdhalfbaked/us-investment-tracker</a></h4>
-      <h4>Last Updated: {{generated_date}}</h4>
-      <hr/>
       <div class="total-progress mb-4">
         <h5>Listed U.S. Investment Promised: {{total_promised}}</h5>
         <div class="progress" style="height: 20px">
@@ -158,8 +154,11 @@
           </tbody>
         </table>
       </div>
+      <hr/>
+      Companies sourced from <a href="https://www.whitehouse.gov/investments/">https://www.whitehouse.gov/investments/</a>
+      <br/>Code and data at <a href="https://github.com/birdhalfbaked/us-investment-tracker">https://github.com/birdhalfbaked/us-investment-tracker</a>
+      <br/>Last Updated: {{generated_date}}
     </div>
-
     <!-- Minimal JavaScript to toggle expandable rows -->
     <script>
       document.querySelectorAll(".expandable-row").forEach((row) => {

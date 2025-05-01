@@ -1,10 +1,10 @@
-# Investment Data README
+# US Investment Tracker
 
-This document provides an overview of the investment data stored in the JSON file, detailing the structure, fields, and their meanings. The data was generated using DeepResearch capabilities from large language models (LLMs), such as Grok, developed by xAI.
+This document provides an overview of the investment data stored in the JSON file, detailing the structure, fields, and their meanings. The data was generated using DeepResearch capabilities from large language models (LLMs), such as Grok.
 
 ## Data Overview
 
-The JSON file contains a collection of records representing investment commitments by various companies in the United States, as of May 1, 2025. Each record details a company's investment plans, including the committed amount, realized investment, sector, focus, status, and sources. The data was compiled using DeepResearch, an advanced feature of LLMs like Grok, which iteratively searches the web and analyzes information to provide accurate and comprehensive responses.
+The JSON file contains a collection of records representing investment commitments by various companies in the United States as listed from the [whitehouse.gov](https://www.whitehouse.gov/investments/) page. Each record details a company's investment plans, including the committed amount, realized investment, sector, focus, status, and sources. The data was compiled using DeepResearch, an advanced feature of LLMs like Grok, which iteratively searches the web and analyzes information to provide accurate and comprehensive responses.
 
 ## Data Fields
 

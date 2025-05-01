@@ -53,7 +53,7 @@ def main():
     template = None
     with open("./index.j2") as f:
         template = Template(f.read())
-    with open("./static/index.html", "w") as f:
+    with open("./docs/index.html", "w") as f:
         f.write(template.render(**render_data))
 
 

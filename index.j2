@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Progress Tracker</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Custom styles for expandable rows */
+      .expand-content {
+        display: none;
+        background-color: #f8f9fa; /* Light gray background */
+        padding: 1rem;
+      }
+      .expand-content.active {
+        display: table-row;
+      }
+      /* Make the entire row clickable */
+      .expandable-row {
+        cursor: pointer;
+      }
+      /* Highlight row on hover */
+      .expandable-row:hover {
+        background-color: #e9ecef; /* Bootstrap's hover-like color */
+      }
+      /* Remove gaps and ensure seamless integration */
+      table {
+        border-collapse: collapse;
+      }
+      .expand-content td {
+        border-top: 0; /* Remove top border to avoid gap */
+        border-bottom: 1px solid #dee2e6; /* Match table border */
+      }
+      /* Ensure table is responsive */
+      .table-container {
+        overflow-x: auto;
+      }
+      .progress-bar {
+        background-color: #007700;
+      }
+    </style>
+  </head>
+  <body class="bg-light p-4">
+    <div class="container">
+      <h4>Last Updated: {{generated_date}}</h4>
+      <hr/>
+      <div class="total-progress mb-4">
+        <h5>Listed U.S. Investment Promised: {{total_promised}}</h5>
+        <div class="progress" style="height: 20px">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: {{total_percent_completed}}%"
+            aria-valuenow="{{total_percent_completed}}"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <strong>{{total_percent_completed}}%</strong> ({{total_progress}})
+      </div>
+      <div class="status-legend mb-4">
+        <h4>Status Legend</h4>
+        <p>
+          The following statuses indicate the current stage or condition of each
+          company's investment as of {{generated_date}}.
+        </p>
+        <ul class="list-unstyled">
+          <li>
+            <span class="badge bg-secondary me-2">Announced</span>
+            The company has publicly declared an investment plan, but no
+            significant progress has been reported.
+          </li>
+          <li>
+            <span class="badge bg-success me-2">In Progress</span>
+            The investment is actively moving forward, with construction,
+            funding, or operational steps underway.
+          </li>
+          <li>
+            <span class="badge bg-warning me-2">Pullback</span>
+            The company has scaled back, delayed, or canceled its investment
+            plans.
+          </li>
+          <li>
+            <span class="badge bg-danger me-2">Layoffs</span>
+            The company is reducing its workforce, potentially impacting
+            investment progress.
+          </li>
+          <li>
+            <span class="badge bg-primary me-2">Complete</span>
+            The investment is fully realized, with the project operational or
+            funds fully disbursed.
+          </li>
+        </ul>
+      </div>
+      <h1 class="text-center mb-4">Investment Progress Tracker</h1>
+      <div class="table-container">
+        <table class="table table-striped table-bordered table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Company</th>
+              <th scope="col">Investment</th>
+              <th scope="col">Sector</th>
+              <th scope="col">Investment Focus</th>
+              <th scope="col">Progress</th>
+              <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+              <th scope="col">Status</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in rows %}
+            <tr class="expandable-row" data-target="expand{{loop.index}}">
+              <td>{{row.company}}</td>
+              <td>{{row.investment_string}}</td>
+              <td>{{row.sector}}</td>
+              <td>{{row.focus}}</td>
+              <td>{{row.progress_string}}</td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: {{row.percent_complete}}%"
+                    aria-valuenow="{{row.percent_complete}}"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>{{row.percent_complete}}%</strong>
+              </td>
+              <td>
+                <span class="badge {{row.status_class}}">{{row.status}}</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand{{loop.index}}">
+              <td colspan="7">
+                <p>
+                  {{row.summary}}
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  {% for source in row.sources %}
+                    <li><a href="{{source}}">{{source}}</a></li>
+                  {% endfor %}
+                </ul>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Minimal JavaScript to toggle expandable rows -->
+    <script>
+      document.querySelectorAll(".expandable-row").forEach((row) => {
+        row.addEventListener("click", () => {
+          const targetId = row.getAttribute("data-target");
+          const targetRow = document.getElementById(targetId);
+          targetRow.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

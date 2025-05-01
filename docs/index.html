@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Progress Tracker</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Custom styles for expandable rows */
+      .expand-content {
+        display: none;
+        background-color: #f8f9fa; /* Light gray background */
+        padding: 1rem;
+      }
+      .expand-content.active {
+        display: table-row;
+      }
+      /* Make the entire row clickable */
+      .expandable-row {
+        cursor: pointer;
+      }
+      /* Highlight row on hover */
+      .expandable-row:hover {
+        background-color: #e9ecef; /* Bootstrap's hover-like color */
+      }
+      /* Remove gaps and ensure seamless integration */
+      table {
+        border-collapse: collapse;
+      }
+      .expand-content td {
+        border-top: 0; /* Remove top border to avoid gap */
+        border-bottom: 1px solid #dee2e6; /* Match table border */
+      }
+      /* Ensure table is responsive */
+      .table-container {
+        overflow-x: auto;
+      }
+      .progress-bar {
+        background-color: #007700;
+      }
+    </style>
+  </head>
+  <body class="bg-light p-4">
+    <div class="container">
+      <h4>Last Updated: May 01, 2025</h4>
+      <hr/>
+      <div class="total-progress mb-4">
+        <h5>Listed U.S. Investment Promised: $1.96 Trillion</h5>
+        <div class="progress" style="height: 20px">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: 0.1%"
+            aria-valuenow="0.1"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <strong>0.1%</strong> ($103.5 Billion)
+      </div>
+      <div class="status-legend mb-4">
+        <h4>Status Legend</h4>
+        <p>
+          The following statuses indicate the current stage or condition of each
+          company's investment as of May 01, 2025.
+        </p>
+        <ul class="list-unstyled">
+          <li>
+            <span class="badge bg-secondary me-2">Announced</span>
+            The company has publicly declared an investment plan, but no
+            significant progress has been reported.
+          </li>
+          <li>
+            <span class="badge bg-success me-2">In Progress</span>
+            The investment is actively moving forward, with construction,
+            funding, or operational steps underway.
+          </li>
+          <li>
+            <span class="badge bg-warning me-2">Pullback</span>
+            The company has scaled back, delayed, or canceled its investment
+            plans.
+          </li>
+          <li>
+            <span class="badge bg-danger me-2">Layoffs</span>
+            The company is reducing its workforce, potentially impacting
+            investment progress.
+          </li>
+          <li>
+            <span class="badge bg-primary me-2">Complete</span>
+            The investment is fully realized, with the project operational or
+            funds fully disbursed.
+          </li>
+        </ul>
+      </div>
+      <h1 class="text-center mb-4">Investment Progress Tracker</h1>
+      <div class="table-container">
+        <table class="table table-striped table-bordered table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Company</th>
+              <th scope="col">Investment</th>
+              <th scope="col">Sector</th>
+              <th scope="col">Investment Focus</th>
+              <th scope="col">Progress</th>
+              <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+              <th scope="col">Status</th>
+              <th scope="col">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="expandable-row" data-target="expand1">
+              <td>Softbank, OpenAI, and Oracle</td>
+              <td>$500.0 Billion</td>
+              <td>Technology & AI</td>
+              <td>AI infrastructure (Project Stargate)</td>
+              <td>$100.0 Billion</td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 20.0%"
+                    aria-valuenow="20.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>20.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand1">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $100 billion (initial deployment for data center construction in Texas, expected to create 100,000 jobs). Construction underway, announced January 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.whitehouse.gov/articles/2025/03/more-investment-more-jobs-and-more-money-in-americans-pockets/">https://www.whitehouse.gov/articles/2025/03/more-investment-more-jobs-and-more-money-in-americans-pockets/</a></li>
+                  
+                    <li><a href="https://group.softbank/en/news/press/20250122">https://group.softbank/en/news/press/20250122</a></li>
+                  
+                    <li><a href="https://www.cnn.com/2025/01/21/tech/openai-oracle-softbank-trump-ai-investment/index.html">https://www.cnn.com/2025/01/21/tech/openai-oracle-softbank-trump-ai-investment/index.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand2">
+              <td>NVIDIA</td>
+              <td>$500.0 Billion</td>
+              <td>Technology & AI</td>
+              <td>AI infrastructure and supercomputers</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand2">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $500 billion committed over four years). Blackwell chip production started in Arizona; supercomputer plants in Texas underway. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.cnbc.com/2025/04/14/nvidia-to-mass-produce-ai-supercomputers-in-texas.html">https://www.cnbc.com/2025/04/14/nvidia-to-mass-produce-ai-supercomputers-in-texas.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand3">
+              <td>Apple</td>
+              <td>$500.0 Billion</td>
+              <td>Technology & AI</td>
+              <td>Manufacturing and training</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand3">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $500 billion committed over four years). New AI server factory in Texas planned to open in 2026; 20,000 new R&D jobs announced. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.apple.com/newsroom/2025/02/apple-will-spend-more-than-500-billion-usd-in-the-us-over-the-next-four-years/">https://www.apple.com/newsroom/2025/02/apple-will-spend-more-than-500-billion-usd-in-the-us-over-the-next-four-years/</a></li>
+                  
+                    <li><a href="https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us">https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand4">
+              <td>IBM</td>
+              <td>$150.0 Billion</td>
+              <td>Technology & AI</td>
+              <td>Growth and manufacturing operations</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-danger">Layoffs</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand4">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $150 billion committed over five years, including $30 billion for R&D). Ongoing layoffs of approximately 9,000 workers in 2025 in consulting, cloud infrastructure, and sales; operations shifting to India. No pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://newsroom.ibm.com/2025-04-28-ibm-unveils-150-billion-investment-in-america-to-accelerate-technology-opportunity">https://newsroom.ibm.com/2025-04-28-ibm-unveils-150-billion-investment-in-america-to-accelerate-technology-opportunity</a></li>
+                  
+                    <li><a href="https://www.theregister.com/2025/03/20/ibm_cuts_us_jobs/">https://www.theregister.com/2025/03/20/ibm_cuts_us_jobs/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand5">
+              <td>Johnson & Johnson</td>
+              <td>$55.0 Billion</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Manufacturing, R&D, and technology</td>
+              <td>$2.0 Billion</td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 4.0%"
+                    aria-valuenow="4.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>4.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand5">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $2 billion+ (groundbreaking for new manufacturing facility in North Carolina, part of $55 billion commitment over four years). Three additional sites planned. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.investor.jnj.com/news/news-details/2025/Johnson--Johnson-Increases-U-S--Investment-to-More-than-55-Billion-Over-the-Next-Four-Years/default.aspx">https://www.investor.jnj.com/news/news-details/2025/Johnson--Johnson-Increases-U-S--Investment-to-More-than-55-Billion-Over-the-Next-Four-Years/default.aspx</a></li>
+                  
+                    <li><a href="https://finance.yahoo.com/news/johnson-johnson-latest-pharma-giant-184108985.html">https://finance.yahoo.com/news/johnson-johnson-latest-pharma-giant-184108985.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand6">
+              <td>Genentech (Roche)</td>
+              <td>$50.0 Billion</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Manufacturing and R&D</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand6">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $50 billion committed over five years). Plans for new R&D and manufacturing sites. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.roche.com/investors/updates/inv-update-2025-04-22">https://www.roche.com/investors/updates/inv-update-2025-04-22</a></li>
+                  
+                    <li><a href="https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us">https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand7">
+              <td>Eli Lilly and Company</td>
+              <td>$27.0 Billion</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Manufacturing capacity expansion</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand7">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $27 billion committed for four new manufacturing sites). Announced February 26, 2025; construction timelines not specified. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.fiercepharma.com/pharma/following-pledges-lilly-jj-novartis-unveils-23b-us-investment-beef-manufacturing-rd">https://www.fiercepharma.com/pharma/following-pledges-lilly-jj-novartis-unveils-23b-us-investment-beef-manufacturing-rd</a></li>
+                  
+                    <li><a href="https://finance.yahoo.com/news/johnson-johnson-latest-pharma-giant-184108985.html">https://finance.yahoo.com/news/johnson-johnson-latest-pharma-giant-184108985.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand8">
+              <td>ADQ and Energy Capital Partners</td>
+              <td>$25.0 Billion</td>
+              <td>Energy & Environment</td>
+              <td>Data centers and energy infrastructure</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand8">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $25 billion committed, with $5 billion initial investment). Partnership announced March 19, 2025, for power generation for U.S. data centers. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.cnbc.com/2025/03/20/abu-dhabis-adq-and-american-ecp-make-25-billion-bet-on-powering-us-data-centers.html">https://www.cnbc.com/2025/03/20/abu-dhabis-adq-and-american-ecp-make-25-billion-bet-on-powering-us-data-centers.html</a></li>
+                  
+                    <li><a href="https://www.reuters.com/business/energy/abu-dhabis-adq-partners-with-ecp-25-billion-plus-data-centre-energy-projects-2025-03-19/">https://www.reuters.com/business/energy/abu-dhabis-adq-partners-with-ecp-25-billion-plus-data-centre-energy-projects-2025-03-19/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand9">
+              <td>Novartis</td>
+              <td>$23.0 Billion</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Manufacturing facility expansion</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-danger">Layoffs</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand9">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $23 billion committed over five years for 10 U.S. facilities). Announced April 10, 2025. Layoffs of 427 employees planned for June 2025 at East Hanover, NJ, site. No pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.fiercepharma.com/pharma/following-pledges-lilly-jj-novartis-unveils-23b-us-investment-beef-manufacturing-rd">https://www.fiercepharma.com/pharma/following-pledges-lilly-jj-novartis-unveils-23b-us-investment-beef-manufacturing-rd</a></li>
+                  
+                    <li><a href="https://www.nj.com/business/2025/04/novartis-to-lay-off-427-nj-workers-in-june.html">https://www.nj.com/business/2025/04/novartis-to-lay-off-427-nj-workers-in-june.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand10">
+              <td>Hyundai</td>
+              <td>$21.0 Billion</td>
+              <td>Manufacturing & Industry</td>
+              <td>Steel plant and other investments</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand10">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $21 billion committed between 2025-2028 for auto production, steel, and EV infrastructure). Announced March 2025; includes $9 billion for auto production expansion and $6 billion for steel and logistics. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us">https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us</a></li>
+                  
+                    <li><a href="https://www.hyundainews.com/en-us/releases/2025/03/hyundai-motor-group-announces-21-billion-us-investment">https://www.hyundainews.com/en-us/releases/2025/03/hyundai-motor-group-announces-21-billion-us-investment</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand11">
+              <td>DAMAC Properties</td>
+              <td>$20.0 Billion</td>
+              <td>Real Estate Development</td>
+              <td>Data center expansion</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand11">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $20 billion committed). No progress reported on data center investment as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand12">
+              <td>CMA CGM</td>
+              <td>$20.0 Billion</td>
+              <td>Transportation & Logistics</td>
+              <td>Shipping and logistics</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand12">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $20 billion committed). No progress reported on shipping and logistics expansion as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand13">
+              <td>VentureGlobal</td>
+              <td>$18.0 Billion</td>
+              <td>Energy & Environment</td>
+              <td>Expansion of transportation equipment</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand13">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $18 billion committed). No progress reported on transportation equipment expansion as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand14">
+              <td>AbbVie</td>
+              <td>$10.0 Billion</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>U.S. manufacturing expansion</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand14">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $10 billion committed over the next decade to support growth in obesity and other areas). Announced April 28, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand15">
+              <td>Merck</td>
+              <td>$9.0 Billion</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>U.S. manufacturing</td>
+              <td>$1.0 Billion</td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 11.0%"
+                    aria-valuenow="11.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>11.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand15">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $1 billion (investing $1 billion in a new Delaware plant to boost U.S. manufacturing, part of $9 billion commitment). Announced April 29, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand16">
+              <td>Clarios</td>
+              <td>$6.0 Billion</td>
+              <td>Energy & Environment</td>
+              <td>Manufacturing expansion and innovation acceleration</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand16">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (8% progress reported, $6 billion committed to expand facilities and support emerging technologies). Announced March 7, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand17">
+              <td>Stellantis</td>
+              <td>$5.0 Billion</td>
+              <td>Manufacturing & Industry</td>
+              <td>Manufacturing network</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-danger">Layoffs</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand17">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $5 billion committed). Temporary layoffs of 900 US workers and paused production in Canada and Mexico due to tariffs, reported April 3, 2025. Investment still planned. No further pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.reuters.com/business/autos-transportation/stellantis-says-will-temporarily-lay-off-900-us-workers-following-tariff-2025-04-03/">https://www.reuters.com/business/autos-transportation/stellantis-says-will-temporarily-lay-off-900-us-workers-following-tariff-2025-04-03/</a></li>
+                  
+                    <li><a href="https://www.euronews.com/business/2025/01/23/car-giant-stellantis-gears-up-for-multi-billion-dollar-us-investment">https://www.euronews.com/business/2025/01/23/car-giant-stellantis-gears-up-for-multi-billion-dollar-us-investment</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand18">
+              <td>Amazon</td>
+              <td>$4.0 Billion</td>
+              <td>Ecommerce & Cloud Computing</td>
+              <td>AI expansion in cloud division</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand18">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (15% progress reported, $4 billion committed as part of a broader $150 billion plan over 15 years for data centers). Investing heavily in AI and cloud infrastructure, announced February 7, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand19">
+              <td>Regeneron Pharmaceuticals</td>
+              <td>$3.0 Billion</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Drug production facility</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand19">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (12% progress reported, $3 billion committed with Fujifilm Diosynth to boost U.S. manufacturing). Announced April 22, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand20">
+              <td>Boeing</td>
+              <td>$3.0 Billion</td>
+              <td>Manufacturing & Industry</td>
+              <td>Advanced aerospace manufacturing facilities</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-danger">Layoffs</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand20">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $3 billion committed). No progress reported on advanced aerospace manufacturing facilities expansion. Layoffs of approximately 17,000 employees (10% of workforce) started November 2024, driven by financial challenges, machinists' strike, and trade war impacts.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.cnn.com/2024/10/11/business/boeing-layoffs-17000-jobs">https://www.cnn.com/2024/10/11/business/boeing-layoffs-17000-jobs</a></li>
+                  
+                    <li><a href="https://www.reuters.com/business/aerospace-defense/boeing-lay-off-17000-workers-delay-first-777x-delivery-2024-10-11/">https://www.reuters.com/business/aerospace-defense/boeing-lay-off-17000-workers-delay-first-777x-delivery-2024-10-11/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand21">
+              <td>NorthMark Strategies</td>
+              <td>$2.8 Billion</td>
+              <td>Technology & AI</td>
+              <td>Supercomputing facility</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand21">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $2.8 billion committed for a supercomputing facility in Spartanburg County, South Carolina). Groundbreaking on April 22, 2025; facility expected to be operational by Q3 2026. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://scdailygazette.com/2025/04/22/cutting-edge-supercomputing-facility-a-2-8b-investment-planned-for-spartanburg-county/">https://scdailygazette.com/2025/04/22/cutting-edge-supercomputing-facility-a-2-8b-investment-planned-for-spartanburg-county/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand22">
+              <td>Thermo Fisher Scientific</td>
+              <td>$2.0 Billion</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Manufacturing operations and innovation</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand22">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $2 billion committed over four years, including $1.5 billion for operations and $500 million for R&D). Announced March 25, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.reuters.com/business/healthcare-pharmaceuticals/thermo-fisher-beats-estimates-steady-demand-tools-services-used-clinical-2025-04-23/">https://www.reuters.com/business/healthcare-pharmaceuticals/thermo-fisher-beats-estimates-steady-demand-tools-services-used-clinical-2025-04-23/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand23">
+              <td>Chobani</td>
+              <td>$1.7 Billion</td>
+              <td>Manufacturing & Industry</td>
+              <td>Dairy processing plant in New York</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand23">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $1.7 billion committed, including $1.2 billion for a dairy processing plant in Rome, New York). Groundbreaking on April 22, 2025; plant expected to be completed by end of 2026, creating over 1,000 jobs. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.nytimes.com/2025/04/22/business/dealbook/chobani-dairy-factory-ny.html">https://www.nytimes.com/2025/04/22/business/dealbook/chobani-dairy-factory-ny.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand24">
+              <td>Anduril</td>
+              <td>$1.0 Billion</td>
+              <td>Defense</td>
+              <td>Modern warfare</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand24">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $1 billion committed, including nearly $600 million for U.S. factories over two years to support autonomous defense capabilities). Announced January 29, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.nytimes.com/2025/02/07/technology/anduril-funding-valuation-28-billion.html">https://www.nytimes.com/2025/02/07/technology/anduril-funding-valuation-28-billion.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand25">
+              <td>GE Aerospace</td>
+              <td>$1.0 Billion</td>
+              <td>Manufacturing & Industry</td>
+              <td>Manufacturing across 16 states</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand25">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, nearly $1 billion committed for 2025 across 16 states to expand engine production capacity). Announced March 12, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.reuters.com/business/aerospace-defense/ge-aerospace-invest-about-1-billion-us-manufacturing-this-year-2025-03-12/">https://www.reuters.com/business/aerospace-defense/ge-aerospace-invest-about-1-billion-us-manufacturing-this-year-2025-03-12/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand26">
+              <td>Amgen</td>
+              <td>$900.0 Million</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Manufacturing operations</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand26">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $900 million committed for expansion of Ohio manufacturing facility, creating 350 jobs). Announced April 25, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.prnewswire.com/news-releases/amgen-announces-900-million-manufacturing-expansion-creation-of-350-new-jobs-in-ohio-302438570.html">https://www.prnewswire.com/news-releases/amgen-announces-900-million-manufacturing-expansion-creation-of-350-new-jobs-in-ohio-302438570.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand27">
+              <td>Schneider Electric</td>
+              <td>$700.0 Million</td>
+              <td>Energy & Environment</td>
+              <td>Energy infrastructure</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand27">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, over $700 million committed through 2027 to support energy infrastructure and AI growth). Announced March 25, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.reuters.com/business/schneider-electric-invest-over-700-million-us-power-ai-boom-2025-03-25/">https://www.reuters.com/business/schneider-electric-invest-over-700-million-us-power-ai-boom-2025-03-25/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand28">
+              <td>GE Vernova</td>
+              <td>$600.0 Million</td>
+              <td>Technology & AI</td>
+              <td>Manufacturing</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand28">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, nearly $600 million committed over two years for U.S. factories and facilities to support gas power, grid, nuclear, and wind, creating over 1,500 jobs). Announced January 29, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.gevernova.com/news/press-releases/ge-vernova-invest-almost-600-million-us-factories-facilities-over-next-two-years">https://www.gevernova.com/news/press-releases/ge-vernova-invest-almost-600-million-us-factories-facilities-over-next-two-years</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand29">
+              <td>Corning, Inc.</td>
+              <td>$1.5 Billion</td>
+              <td>Manufacturing & Industry</td>
+              <td>Solar component plant in Michigan</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand29">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (20% progress reported, $1.5 billion committed for a solar component plant in Michigan, up from $900 million). Under construction, expected to open by end of 2025, creating over 1,100 jobs. Announced April 29, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.foxbusiness.com/politics/major-solar-parts-maker-boosts-us-investment-key-state-expand-our-footprint">https://www.foxbusiness.com/politics/major-solar-parts-maker-boosts-us-investment-key-state-expand-our-footprint</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand30">
+              <td>AIP Management</td>
+              <td>$500.0 Million</td>
+              <td>Technology & AI</td>
+              <td>Solar developer investment</td>
+              <td>$500.0 Million</td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 100.0%"
+                    aria-valuenow="100.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>100.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-success">Complete</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand30">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $500 million (100% progress reported, $500 million invested in Silicon Ranch, a U.S. solar developer). Investment completed April 3, 2025, marking first North American renewable energy investment. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.utilitydive.com/news/netherlands-investor-aip-management-invests-500m-us-solar-producer-silicon-ranch/744735/">https://www.utilitydive.com/news/netherlands-investor-aip-management-invests-500m-us-solar-producer-silicon-ranch/744735/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand31">
+              <td>Abbott Labs</td>
+              <td>$500.0 Million</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Manufacturing expansion in Illinois and Texas</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand31">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (10% progress reported, $500 million committed for manufacturing and R&D in Illinois and Texas, expected to go live by end of 2025, adding 200 jobs in Illinois). Announced April 16, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.reuters.com/business/healthcare-pharmaceuticals/abbott-backs-profit-forecast-invest-500-million-us-amid-tariffs-2025-04-16/">https://www.reuters.com/business/healthcare-pharmaceuticals/abbott-backs-profit-forecast-invest-500-million-us-amid-tariffs-2025-04-16/</a></li>
+                  
+                    <li><a href="https://chicago.suntimes.com/business/2025/04/18/abbott-laboratories-invest-500-million-manufacturing-illinois-texas">https://chicago.suntimes.com/business/2025/04/18/abbott-laboratories-invest-500-million-manufacturing-illinois-texas</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand32">
+              <td>Diageo</td>
+              <td>$415.0 Million</td>
+              <td>Food & Beverage</td>
+              <td>Manufacturing in Alabama</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand32">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $415 million committed for manufacturing in Alabama). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand33">
+              <td>The Bel Group</td>
+              <td>$350.0 Million</td>
+              <td>Food & Beverage</td>
+              <td>Production facilities in SD, Idaho, & Wisconsin</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand33">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $350 million committed for production facilities in South Dakota, Idaho, and Wisconsin). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand34">
+              <td>Eaton Corporation</td>
+              <td>$340.0 Million</td>
+              <td>Manufacturing & Industry</td>
+              <td>Transformers facility in South Carolina</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand34">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $340 million committed for a transformers facility in South Carolina to boost utility-grade transformer production, creating 600 jobs). Announced April 29, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/Eaton-to-invest--340-million-in-new-South-Carolina-facility-to-meet-growing-demand-for-utility-grade-transformers.html">https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/Eaton-to-invest--340-million-in-new-South-Carolina-facility-to-meet-growing-demand-for-utility-grade-transformers.html</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand35">
+              <td>Siemens</td>
+              <td>$285.0 Million</td>
+              <td>Technology & AI</td>
+              <td>AI data centers and manufacturing</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand35">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $285 million committed for AI data centers and manufacturing). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand36">
+              <td>Clasen Quality Chocolate</td>
+              <td>$230.0 Million</td>
+              <td>Manufacturing & Industry</td>
+              <td>Production facility in Virginia</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand36">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $230 million committed for a production facility in Virginia). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand37">
+              <td>Fiserv</td>
+              <td>$175.0 Million</td>
+              <td>Technology & AI</td>
+              <td>Strategic fintech hub</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand37">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $175 million committed for a strategic fintech hub). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand38">
+              <td>Paris Baguette</td>
+              <td>$160.0 Million</td>
+              <td>Food & Beverage</td>
+              <td>Manufacturing plant in Texas</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand38">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $160 million committed for a manufacturing plant in Texas). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand39">
+              <td>TS Conductor</td>
+              <td>$134.0 Million</td>
+              <td>Manufacturing & Industry</td>
+              <td>Advanced conductor manufacturing in South Carolina</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand39">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $134 million committed for advanced conductor manufacturing in South Carolina). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand40">
+              <td>ABB</td>
+              <td>$120.0 Million</td>
+              <td>Manufacturing & Industry</td>
+              <td>Low-voltage product expansion in Tennessee and Mississippi</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand40">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $120 million committed for low-voltage product expansion in Tennessee and Mississippi). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand41">
+              <td>Saica Group</td>
+              <td>$110.0 Million</td>
+              <td>Manufacturing & Industry</td>
+              <td>Packaging manufacturing in Indiana</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand41">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $110 million committed for packaging manufacturing in Indiana). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand42">
+              <td>Charms, LLC</td>
+              <td>$97.7 Million</td>
+              <td>Manufacturing & Industry</td>
+              <td>Expansion in Tennessee</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand42">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $97.7 million committed for expansion in Tennessee). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand43">
+              <td>Toyota Motor Corporation</td>
+              <td>$88.0 Million</td>
+              <td>Transportation & Logistics</td>
+              <td>Hybrid production in West Virginia</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-primary">In Progress</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand43">
+              <td colspan="7">
+                <p>
+                  Realized Investment: Not specified (5% progress reported, $88 million committed for hybrid transaxle production at Toyota Motor Manufacturing West Virginia, creating 100 jobs). Announced April 29, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                    <li><a href="https://pressroom.toyota.com/toyota-invests-88-million-in-west-virginia-plant-for-hybrid-transaxle-production/">https://pressroom.toyota.com/toyota-invests-88-million-in-west-virginia-plant-for-hybrid-transaxle-production/</a></li>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand44">
+              <td>Sygene International</td>
+              <td>$36.5 Million</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Biologics facility in Baltimore</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand44">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $36.5 million committed for a biologics facility in Baltimore). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand45">
+              <td>Asahi Group Holdings</td>
+              <td>$35.0 Million</td>
+              <td>Food & Beverage</td>
+              <td>Production boost in Wisconsin</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand45">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $35 million committed for production boost in Wisconsin). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand46">
+              <td>Cyclic Materials</td>
+              <td>$20.0 Million</td>
+              <td>Energy & Environment</td>
+              <td>Rare earth elements recycling in Arizona</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand46">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $20 million committed for rare earth elements recycling in Arizona). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand47">
+              <td>Guardian Bikes</td>
+              <td>$19.0 Million</td>
+              <td>Manufacturing & Industry</td>
+              <td>Bike frame manufacturing in Indiana</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand47">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $19 million committed for bike frame manufacturing in Indiana). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+            <tr class="expandable-row" data-target="expand48">
+              <td>LGM Pharma</td>
+              <td>$6.0 Million</td>
+              <td>Pharmaceuticals & Biotech</td>
+              <td>Manufacturing facility expansion in Texas</td>
+              <td>$0 </td>
+              <td>
+                <div class="progress" style="height: 20px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 0.0%"
+                    aria-valuenow="0.0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <strong>0.0%</strong>
+              </td>
+              <td>
+                <span class="badge bg-secondary">Announced</span>
+              </td>
+              <td>Click to expand</td>
+            </tr>
+            <tr class="expand-content" id="expand48">
+              <td colspan="7">
+                <p>
+                  Realized Investment: $0 (no physical expenditure reported, $6 million committed for manufacturing facility expansion in Texas). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.
+                </p>
+                <p>Sources:</p>
+                <ul>
+                  
+                </ul>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Minimal JavaScript to toggle expandable rows -->
+    <script>
+      document.querySelectorAll(".expandable-row").forEach((row) => {
+        row.addEventListener("click", () => {
+          const targetId = row.getAttribute("data-target");
+          const targetRow = document.getElementById(targetId);
+          targetRow.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,545 @@
+[
+    {
+      "company": "Softbank, OpenAI, and Oracle",
+      "investment": 500000000,
+      "sector": "Technology & AI",
+      "focus": "AI infrastructure (Project Stargate)",
+      "progress": 100000000,
+      "status": "In Progress",
+      "summary": "Realized Investment: $100 billion (initial deployment for data center construction in Texas, expected to create 100,000 jobs). Construction underway, announced January 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.whitehouse.gov/articles/2025/03/more-investment-more-jobs-and-more-money-in-americans-pockets/",
+        "https://group.softbank/en/news/press/20250122",
+        "https://www.cnn.com/2025/01/21/tech/openai-oracle-softbank-trump-ai-investment/index.html"
+      ]
+    },
+    {
+      "company": "NVIDIA",
+      "investment": 500000000,
+      "sector": "Technology & AI",
+      "focus": "AI infrastructure and supercomputers",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $500 billion committed over four years). Blackwell chip production started in Arizona; supercomputer plants in Texas underway. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.cnbc.com/2025/04/14/nvidia-to-mass-produce-ai-supercomputers-in-texas.html"
+      ]
+    },
+    {
+      "company": "Apple",
+      "investment": 500000000,
+      "sector": "Technology & AI",
+      "focus": "Manufacturing and training",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $500 billion committed over four years). New AI server factory in Texas planned to open in 2026; 20,000 new R&D jobs announced. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.apple.com/newsroom/2025/02/apple-will-spend-more-than-500-billion-usd-in-the-us-over-the-next-four-years/",
+        "https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us"
+      ]
+    },
+    {
+      "company": "IBM",
+      "investment": 150000000,
+      "sector": "Technology & AI",
+      "focus": "Growth and manufacturing operations",
+      "progress": 0,
+      "status": "Layoffs",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $150 billion committed over five years, including $30 billion for R&D). Ongoing layoffs of approximately 9,000 workers in 2025 in consulting, cloud infrastructure, and sales; operations shifting to India. No pullbacks reported.",
+      "sources": [
+        "https://newsroom.ibm.com/2025-04-28-ibm-unveils-150-billion-investment-in-america-to-accelerate-technology-opportunity",
+        "https://www.theregister.com/2025/03/20/ibm_cuts_us_jobs/"
+      ]
+    },
+    {
+      "company": "Johnson & Johnson",
+      "investment": 55000000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Manufacturing, R&D, and technology",
+      "progress": 2000000,
+      "status": "In Progress",
+      "summary": "Realized Investment: $2 billion+ (groundbreaking for new manufacturing facility in North Carolina, part of $55 billion commitment over four years). Three additional sites planned. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.investor.jnj.com/news/news-details/2025/Johnson--Johnson-Increases-U-S--Investment-to-More-than-55-Billion-Over-the-Next-Four-Years/default.aspx",
+        "https://finance.yahoo.com/news/johnson-johnson-latest-pharma-giant-184108985.html"
+      ]
+    },
+    {
+      "company": "Genentech (Roche)",
+      "investment": 50000000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Manufacturing and R&D",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $50 billion committed over five years). Plans for new R&D and manufacturing sites. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.roche.com/investors/updates/inv-update-2025-04-22",
+        "https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us"
+      ]
+    },
+    {
+      "company": "Eli Lilly and Company",
+      "investment": 27000000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Manufacturing capacity expansion",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $27 billion committed for four new manufacturing sites). Announced February 26, 2025; construction timelines not specified. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.fiercepharma.com/pharma/following-pledges-lilly-jj-novartis-unveils-23b-us-investment-beef-manufacturing-rd",
+        "https://finance.yahoo.com/news/johnson-johnson-latest-pharma-giant-184108985.html"
+      ]
+    },
+    {
+      "company": "ADQ and Energy Capital Partners",
+      "investment": 25000000,
+      "sector": "Energy & Environment",
+      "focus": "Data centers and energy infrastructure",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $25 billion committed, with $5 billion initial investment). Partnership announced March 19, 2025, for power generation for U.S. data centers. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.cnbc.com/2025/03/20/abu-dhabis-adq-and-american-ecp-make-25-billion-bet-on-powering-us-data-centers.html",
+        "https://www.reuters.com/business/energy/abu-dhabis-adq-partners-with-ecp-25-billion-plus-data-centre-energy-projects-2025-03-19/"
+      ]
+    },
+    {
+      "company": "Novartis",
+      "investment": 23000000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Manufacturing facility expansion",
+      "progress": 0,
+      "status": "Layoffs",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $23 billion committed over five years for 10 U.S. facilities). Announced April 10, 2025. Layoffs of 427 employees planned for June 2025 at East Hanover, NJ, site. No pullbacks reported.",
+      "sources": [
+        "https://www.fiercepharma.com/pharma/following-pledges-lilly-jj-novartis-unveils-23b-us-investment-beef-manufacturing-rd",
+        "https://www.nj.com/business/2025/04/novartis-to-lay-off-427-nj-workers-in-june.html"
+      ]
+    },
+    {
+      "company": "Hyundai",
+      "investment": 21000000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Steel plant and other investments",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $21 billion committed between 2025-2028 for auto production, steel, and EV infrastructure). Announced March 2025; includes $9 billion for auto production expansion and $6 billion for steel and logistics. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.foxbusiness.com/politics/trump-marks-100-days-recapping-companies-who-will-invest-1b-more-us",
+        "https://www.hyundainews.com/en-us/releases/2025/03/hyundai-motor-group-announces-21-billion-us-investment"
+      ]
+    },
+    {
+      "company": "DAMAC Properties",
+      "investment": 20000000,
+      "sector": "Real Estate Development",
+      "focus": "Data center expansion",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $20 billion committed). No progress reported on data center investment as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "CMA CGM",
+      "investment": 20000000,
+      "sector": "Transportation & Logistics",
+      "focus": "Shipping and logistics",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $20 billion committed). No progress reported on shipping and logistics expansion as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "VentureGlobal",
+      "investment": 18000000,
+      "sector": "Energy & Environment",
+      "focus": "Expansion of transportation equipment",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $18 billion committed). No progress reported on transportation equipment expansion as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "AbbVie",
+      "investment": 10000000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "U.S. manufacturing expansion",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $10 billion committed over the next decade to support growth in obesity and other areas). Announced April 28, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Merck",
+      "investment": 9000000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "U.S. manufacturing",
+      "progress": 1000000,
+      "status": "In Progress",
+      "summary": "Realized Investment: $1 billion (investing $1 billion in a new Delaware plant to boost U.S. manufacturing, part of $9 billion commitment). Announced April 29, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Clarios",
+      "investment": 6000000,
+      "sector": "Energy & Environment",
+      "focus": "Manufacturing expansion and innovation acceleration",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (8% progress reported, $6 billion committed to expand facilities and support emerging technologies). Announced March 7, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Stellantis",
+      "investment": 5000000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Manufacturing network",
+      "progress": 0,
+      "status": "Layoffs",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $5 billion committed). Temporary layoffs of 900 US workers and paused production in Canada and Mexico due to tariffs, reported April 3, 2025. Investment still planned. No further pullbacks reported.",
+      "sources": [
+        "https://www.reuters.com/business/autos-transportation/stellantis-says-will-temporarily-lay-off-900-us-workers-following-tariff-2025-04-03/",
+        "https://www.euronews.com/business/2025/01/23/car-giant-stellantis-gears-up-for-multi-billion-dollar-us-investment"
+      ]
+    },
+    {
+      "company": "Amazon",
+      "investment": 4000000,
+      "sector": "Ecommerce & Cloud Computing",
+      "focus": "AI expansion in cloud division",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (15% progress reported, $4 billion committed as part of a broader $150 billion plan over 15 years for data centers). Investing heavily in AI and cloud infrastructure, announced February 7, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Regeneron Pharmaceuticals",
+      "investment": 3000000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Drug production facility",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (12% progress reported, $3 billion committed with Fujifilm Diosynth to boost U.S. manufacturing). Announced April 22, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Boeing",
+      "investment": 3000000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Advanced aerospace manufacturing facilities",
+      "progress": 0,
+      "status": "Layoffs",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $3 billion committed). No progress reported on advanced aerospace manufacturing facilities expansion. Layoffs of approximately 17,000 employees (10% of workforce) started November 2024, driven by financial challenges, machinists' strike, and trade war impacts.",
+      "sources": [
+        "https://www.cnn.com/2024/10/11/business/boeing-layoffs-17000-jobs",
+        "https://www.reuters.com/business/aerospace-defense/boeing-lay-off-17000-workers-delay-first-777x-delivery-2024-10-11/"
+      ]
+    },
+    {
+      "company": "NorthMark Strategies",
+      "investment": 2800000,
+      "sector": "Technology & AI",
+      "focus": "Supercomputing facility",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $2.8 billion committed for a supercomputing facility in Spartanburg County, South Carolina). Groundbreaking on April 22, 2025; facility expected to be operational by Q3 2026. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://scdailygazette.com/2025/04/22/cutting-edge-supercomputing-facility-a-2-8b-investment-planned-for-spartanburg-county/"
+      ]
+    },
+    {
+      "company": "Thermo Fisher Scientific",
+      "investment": 2000000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Manufacturing operations and innovation",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $2 billion committed over four years, including $1.5 billion for operations and $500 million for R&D). Announced March 25, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.reuters.com/business/healthcare-pharmaceuticals/thermo-fisher-beats-estimates-steady-demand-tools-services-used-clinical-2025-04-23/"
+      ]
+    },
+    {
+      "company": "Chobani",
+      "investment": 1700000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Dairy processing plant in New York",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $1.7 billion committed, including $1.2 billion for a dairy processing plant in Rome, New York). Groundbreaking on April 22, 2025; plant expected to be completed by end of 2026, creating over 1,000 jobs. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.nytimes.com/2025/04/22/business/dealbook/chobani-dairy-factory-ny.html"
+      ]
+    },
+    {
+      "company": "Anduril",
+      "investment": 1000000,
+      "sector": "Defense",
+      "focus": "Modern warfare",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $1 billion committed, including nearly $600 million for U.S. factories over two years to support autonomous defense capabilities). Announced January 29, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.nytimes.com/2025/02/07/technology/anduril-funding-valuation-28-billion.html"
+      ]
+    },
+    {
+      "company": "GE Aerospace",
+      "investment": 1000000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Manufacturing across 16 states",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, nearly $1 billion committed for 2025 across 16 states to expand engine production capacity). Announced March 12, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.reuters.com/business/aerospace-defense/ge-aerospace-invest-about-1-billion-us-manufacturing-this-year-2025-03-12/"
+      ]
+    },
+    {
+      "company": "Amgen",
+      "investment": 900000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Manufacturing operations",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $900 million committed for expansion of Ohio manufacturing facility, creating 350 jobs). Announced April 25, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/amgen-announces-900-million-manufacturing-expansion-creation-of-350-new-jobs-in-ohio-302438570.html"
+      ]
+    },
+    {
+      "company": "Schneider Electric",
+      "investment": 700000,
+      "sector": "Energy & Environment",
+      "focus": "Energy infrastructure",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, over $700 million committed through 2027 to support energy infrastructure and AI growth). Announced March 25, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.reuters.com/business/schneider-electric-invest-over-700-million-us-power-ai-boom-2025-03-25/"
+      ]
+    },
+    {
+      "company": "GE Vernova",
+      "investment": 600000,
+      "sector": "Technology & AI",
+      "focus": "Manufacturing",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, nearly $600 million committed over two years for U.S. factories and facilities to support gas power, grid, nuclear, and wind, creating over 1,500 jobs). Announced January 29, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.gevernova.com/news/press-releases/ge-vernova-invest-almost-600-million-us-factories-facilities-over-next-two-years"
+      ]
+    },
+    {
+      "company": "Corning, Inc.",
+      "investment": 1500000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Solar component plant in Michigan",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (20% progress reported, $1.5 billion committed for a solar component plant in Michigan, up from $900 million). Under construction, expected to open by end of 2025, creating over 1,100 jobs. Announced April 29, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.foxbusiness.com/politics/major-solar-parts-maker-boosts-us-investment-key-state-expand-our-footprint"
+      ]
+    },
+    {
+      "company": "AIP Management",
+      "investment": 500000,
+      "sector": "Technology & AI",
+      "focus": "Solar developer investment",
+      "progress": 500000,
+      "status": "Complete",
+      "summary": "Realized Investment: $500 million (100% progress reported, $500 million invested in Silicon Ranch, a U.S. solar developer). Investment completed April 3, 2025, marking first North American renewable energy investment. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.utilitydive.com/news/netherlands-investor-aip-management-invests-500m-us-solar-producer-silicon-ranch/744735/"
+      ]
+    },
+    {
+      "company": "Abbott Labs",
+      "investment": 500000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Manufacturing expansion in Illinois and Texas",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (10% progress reported, $500 million committed for manufacturing and R&D in Illinois and Texas, expected to go live by end of 2025, adding 200 jobs in Illinois). Announced April 16, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.reuters.com/business/healthcare-pharmaceuticals/abbott-backs-profit-forecast-invest-500-million-us-amid-tariffs-2025-04-16/",
+        "https://chicago.suntimes.com/business/2025/04/18/abbott-laboratories-invest-500-million-manufacturing-illinois-texas"
+      ]
+    },
+    {
+      "company": "Diageo",
+      "investment": 415000,
+      "sector": "Food & Beverage",
+      "focus": "Manufacturing in Alabama",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $415 million committed for manufacturing in Alabama). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "The Bel Group",
+      "investment": 350000,
+      "sector": "Food & Beverage",
+      "focus": "Production facilities in SD, Idaho, & Wisconsin",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $350 million committed for production facilities in South Dakota, Idaho, and Wisconsin). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Eaton Corporation",
+      "investment": 340000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Transformers facility in South Carolina",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $340 million committed for a transformers facility in South Carolina to boost utility-grade transformer production, creating 600 jobs). Announced April 29, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/Eaton-to-invest--340-million-in-new-South-Carolina-facility-to-meet-growing-demand-for-utility-grade-transformers.html"
+      ]
+    },
+    {
+      "company": "Siemens",
+      "investment": 285000,
+      "sector": "Technology & AI",
+      "focus": "AI data centers and manufacturing",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $285 million committed for AI data centers and manufacturing). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Clasen Quality Chocolate",
+      "investment": 230000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Production facility in Virginia",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $230 million committed for a production facility in Virginia). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Fiserv",
+      "investment": 175000,
+      "sector": "Technology & AI",
+      "focus": "Strategic fintech hub",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $175 million committed for a strategic fintech hub). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Paris Baguette",
+      "investment": 160000,
+      "sector": "Food & Beverage",
+      "focus": "Manufacturing plant in Texas",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $160 million committed for a manufacturing plant in Texas). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "TS Conductor",
+      "investment": 134000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Advanced conductor manufacturing in South Carolina",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $134 million committed for advanced conductor manufacturing in South Carolina). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "ABB",
+      "investment": 120000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Low-voltage product expansion in Tennessee and Mississippi",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $120 million committed for low-voltage product expansion in Tennessee and Mississippi). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Saica Group",
+      "investment": 110000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Packaging manufacturing in Indiana",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $110 million committed for packaging manufacturing in Indiana). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Charms, LLC",
+      "investment": 97700,
+      "sector": "Manufacturing & Industry",
+      "focus": "Expansion in Tennessee",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $97.7 million committed for expansion in Tennessee). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Toyota Motor Corporation",
+      "investment": 88000,
+      "sector": "Transportation & Logistics",
+      "focus": "Hybrid production in West Virginia",
+      "progress": 0,
+      "status": "In Progress",
+      "summary": "Realized Investment: Not specified (5% progress reported, $88 million committed for hybrid transaxle production at Toyota Motor Manufacturing West Virginia, creating 100 jobs). Announced April 29, 2025. No layoffs or pullbacks reported.",
+      "sources": [
+        "https://pressroom.toyota.com/toyota-invests-88-million-in-west-virginia-plant-for-hybrid-transaxle-production/"
+      ]
+    },
+    {
+      "company": "Sygene International",
+      "investment": 36500,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Biologics facility in Baltimore",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $36.5 million committed for a biologics facility in Baltimore). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Asahi Group Holdings",
+      "investment": 35000,
+      "sector": "Food & Beverage",
+      "focus": "Production boost in Wisconsin",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $35 million committed for production boost in Wisconsin). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Cyclic Materials",
+      "investment": 20000,
+      "sector": "Energy & Environment",
+      "focus": "Rare earth elements recycling in Arizona",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $20 million committed for rare earth elements recycling in Arizona). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "Guardian Bikes",
+      "investment": 19000,
+      "sector": "Manufacturing & Industry",
+      "focus": "Bike frame manufacturing in Indiana",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $19 million committed for bike frame manufacturing in Indiana). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    },
+    {
+      "company": "LGM Pharma",
+      "investment": 6000,
+      "sector": "Pharmaceuticals & Biotech",
+      "focus": "Manufacturing facility expansion in Texas",
+      "progress": 0,
+      "status": "Announced",
+      "summary": "Realized Investment: $0 (no physical expenditure reported, $6 million committed for manufacturing facility expansion in Texas). No progress reported as of May 1, 2025. No layoffs or pullbacks reported.",
+      "sources": []
+    }
+  ]

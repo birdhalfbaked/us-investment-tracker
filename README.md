@@ -53,6 +53,16 @@ The DeepResearch capability allowed for accurate interpretation of complex data,
 
 ![deepresearch example](./docs/deep-research.png)
 
+### Prompt
+
+deep research prompt
+
+    Do research on the latest for data pertaining to the companies listed to update the json. amounts are in thousands of USD
+
+followup to update JSON
+
+    take the learnings and put them into the same json format. The only statuses allowed are already in the original payload
+
 ## Notes
 
 - **Investment and Progress**: The `investment` field represents the total committed amount, while `progress` reflects the actual amount invested (realized investment). For example, a $500 billion commitment with $100 billion realized is represented as `investment: 500000000` and `progress: 100000000`.
